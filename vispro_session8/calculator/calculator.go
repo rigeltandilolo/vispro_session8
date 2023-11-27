@@ -1,7 +1,7 @@
 package calculator
 
 import (
-	"github.com/your-username/your-project-name/mathops" // Sesuaikan dengan struktur direktori dan nama proyek Anda
+	"visprosession8/vispro_session8/mathops"
 )
 
 // Add performs addition using the mathops package
