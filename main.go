@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Welcome to the User-Friendly Calculator!")
+	fmt.Println("Welcome to the Rigel's Calculator!")
 
 	for {
 		ui.RunCalculator()
@@ -16,7 +16,7 @@ func main() {
 		fmt.Scanln(&choice)
 
 		if choice != "yes" {
-			fmt.Println("Thank you for using the calculator. Goodbye!")
+			fmt.Println("Thank you for using the calculator. Goodbye! <3")
 			break
 		}
 	}

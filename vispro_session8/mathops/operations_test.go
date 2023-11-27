@@ -37,3 +37,17 @@ func TestDivision(t *testing.T) {
 		t.Error("Expected error for division by zero, but got nil")
 	}
 }
+
+func TestSquareRoot(t *testing.T) {
+	// Test valid case
+	result, err := SquareRoot(9)
+	if err != nil || result != 3 {
+		t.Errorf("Expected result: 3, got result: %v, error: %v", result, err)
+	}
+
+	// Test invalid case (negative number)
+	_, err = SquareRoot(-4)
+	if err == nil {
+		t.Error("Expected error for square root of a negative number, but got nil")
+	}
+}

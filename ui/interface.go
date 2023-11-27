@@ -13,6 +13,7 @@ func ShowMenu() {
 	fmt.Println("3. Multiplication (*)")
 	fmt.Println("4. Division (/)")
 	fmt.Println("5. Power (^)")
+	fmt.Println("6. Square Root (√)")
 }
 
 // GetUserInput menerima input dari pengguna untuk dua bilangan dan operasi
@@ -71,6 +72,12 @@ func RunCalculator() {
 		}
 	case "5":
 		result = calculator.Power(num1, num2)
+	case "6":
+		result, err = calculator.SquareRoot(num1)
+		if err != nil {
+			fmt.Println("Error:", err)
+			return
+		}
 	default:
 		fmt.Println("Invalid operation")
 		return

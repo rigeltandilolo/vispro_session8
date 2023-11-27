@@ -1,6 +1,8 @@
 package calculator
 
 import (
+	"errors"
+	"math"
 	"visprosession8/vispro_session8/mathops"
 )
 
@@ -31,4 +33,12 @@ func Power(base, exponent float64) float64 {
 		result *= base
 	}
 	return result
+}
+
+// SquareRoot menghitung akar kuadrat dari sebuah bilangan
+func SquareRoot(num float64) (float64, error) {
+	if num < 0 {
+		return 0, errors.New("cannot calculate square root of a negative number")
+	}
+	return math.Sqrt(num), nil
 }

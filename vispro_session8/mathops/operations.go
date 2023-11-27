@@ -1,6 +1,9 @@
 package mathops
 
-import "errors"
+import (
+	"errors"
+	"math"
+)
 
 // Addition returns the sum of two numbers
 func Addition(a, b float64) float64 {
@@ -23,4 +26,12 @@ func Division(a, b float64) (float64, error) {
 		return 0, errors.New("division by zero is not allowed")
 	}
 	return a / b, nil
+}
+
+// SquareRoot menghitung akar kuadrat dari sebuah bilangan
+func SquareRoot(num float64) (float64, error) {
+	if num < 0 {
+		return 0, errors.New("cannot calculate square root of a negative number")
+	}
+	return math.Sqrt(num), nil
 }
