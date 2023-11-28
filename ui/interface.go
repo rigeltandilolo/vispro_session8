@@ -26,7 +26,7 @@ func GetUserInput() (float64, float64, string, error) {
 	fmt.Scanln(&num1)
 
 	// Pilihan operasi
-	fmt.Print("Choose operation (1-5): ")
+	fmt.Print("Choose operation (1-6): ")
 	fmt.Scanln(&op)
 
 	// Input kedua
