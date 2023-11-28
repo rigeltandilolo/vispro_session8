@@ -2,7 +2,7 @@ package ui
 
 import (
 	"fmt"
-	"visprosession8/vispro_session8/calculator" // Sesuaikan dengan struktur direktori dan nama proyek Anda
+	"visprosession8/vispro_session8/calculator"
 )
 
 // ShowMenu menampilkan menu pilihan operasi kalkulator
